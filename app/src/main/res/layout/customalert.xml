@@ -1,7 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:orientation="vertical"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/root_alert"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/nama"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="inputkan nama anda"
+            android:id="@+id/edtnama"
+            android:hint="@string/nama_anda"
+
+            android:inputType="text" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/email"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="inputkan email anda"
+            android:id="@+id/edtemail"
+            android:hint="@string/emailanda"
+
+            android:inputType="textEmailAddress" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/usia"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="inputkan usia anda"
+            android:id="@+id/edtusia"
+            android:hint="@string/usia_anda"
+
+            android:inputType="number" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/no_hp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="inputkan nohp anda"
+            android:id="@+id/edtnohp"
+            android:hint="@string/no_hp_anda"
+            android:inputType="phone" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jenis_kelamin"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rblakilaki"
+                android:checked="true"
+                android:text="@string/laki_laki"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbperempuan"
+                android:text="@string/perempuan"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hobby"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:id="@+id/cbngoding"
+                android:text="@string/ngoding"/>
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:id="@+id/cbmakan"
+                android:text="@string/makan"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:id="@+id/cbnonton"
+                android:text="@string/nonton_film"/>
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:id="@+id/cbgowes"
+                android:text="@string/gowes"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </LinearLayout>
