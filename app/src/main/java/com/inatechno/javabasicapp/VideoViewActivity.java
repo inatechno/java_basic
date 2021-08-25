@@ -8,6 +8,7 @@ import android.widget.MediaController;
 import android.widget.VideoView;
 
 public class VideoViewActivity extends AppCompatActivity {
+    //update git
 VideoView videoView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
