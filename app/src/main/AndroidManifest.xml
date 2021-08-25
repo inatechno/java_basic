@@ -21,7 +21,7 @@
         <activity android:name=".ListViewBiasaActivity" />
         <activity android:name=".VideoViewActivity" />
         <activity android:name=".CustomAlertActivity" />
-        <activity android:name=".TabViewActivity" />
+        <activity android:name=".ViewPagerActivity" />
         <activity android:name=".SpinnerActivity" />
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".GridViewActivity" />

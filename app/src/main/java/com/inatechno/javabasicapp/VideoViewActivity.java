@@ -1,24 +1,26 @@
 package com.inatechno.javabasicapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.MediaController;
-import android.widget.VideoView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.inatechno.javabasicapp.databinding.ActivityVideoViewBinding;
 
 public class VideoViewActivity extends AppCompatActivity {
     //update git
-VideoView videoView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_video_view);
-        videoView = findViewById(R.id.video);
+        ActivityVideoViewBinding binding = ActivityVideoViewBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
         MediaController controller = new MediaController(this);
         Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.gothedistance);
-        videoView.setVideoURI(uri);
-        videoView.setMediaController(controller);
-        videoView.start();
+        binding.video.setVideoURI(uri);
+        binding.video.setMediaController(controller);
+        binding.video.start();
     }
 }

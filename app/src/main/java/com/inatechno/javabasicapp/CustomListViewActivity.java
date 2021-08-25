@@ -1,12 +1,12 @@
 package com.inatechno.javabasicapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.inatechno.javabasicapp.adapter.CustomListAdapter;
 
@@ -27,7 +27,7 @@ public class CustomListViewActivity extends AppCompatActivity {
         customList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(CustomListViewActivity.this,DetailCustomListViewActivity.class);
+                Intent i = new Intent(  CustomListViewActivity.this,DetailCustomListViewActivity.class);
                 i.putExtra("nH",namaHelm[position]);
                 i.putExtra("gH",gambarHelm[position]);
                 startActivity(i);

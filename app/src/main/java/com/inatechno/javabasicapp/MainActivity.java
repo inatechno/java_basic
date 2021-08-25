@@ -1,9 +1,5 @@
 package com.inatechno.javabasicapp;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +8,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 //    //deklarasi variable
@@ -65,25 +65,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void keluar() {
-        AlertDialog keluar = new AlertDialog.Builder(this).create();
-        keluar.setTitle("Informasi");
-        keluar.setMessage("Apakah anda yakin ingin keluar ?");
-        keluar.setIcon(R.mipmap.ic_helm);
-        keluar.setButton(AlertDialog.BUTTON_POSITIVE, "Iya", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-                finish();
-            }
-        });
-        keluar.setButton(AlertDialog.BUTTON_NEGATIVE, "Tidak", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
+         AlertDialog keluar = new AlertDialog.Builder(this).create();
+                 keluar.setTitle("Informasi");
+                 keluar.setMessage("Apakah anda yakin ingin keluar ?");
+                 keluar.setIcon(R.mipmap.ic_helm);
+                 keluar.setButton(AlertDialog.BUTTON_POSITIVE, "Iya", new DialogInterface.OnClickListener() {
+                     @Override
+                     public void onClick(DialogInterface dialog, int which) {
+                         dialog.dismiss();
+                         finish();
+                     }
+                 });
+                 keluar.setButton(AlertDialog.BUTTON_NEGATIVE, "Tidak", new DialogInterface.OnClickListener() {
+                     @Override
+                     public void onClick(DialogInterface dialog, int which) {
 
-            }
-        });
+                     }
+                 });
 
-        keluar.show();
+                 keluar.show();
     }
 
     @Override
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onWebview(View view) {
-        startActivity(new Intent(MainActivity.this, WebviewURLHTMLActivity.class));
+        startActivity(new Intent(MainActivity.this, WebViewActivity.class));
 
     }
 
@@ -147,8 +147,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, RecyclerViewActivity.class));
     }
 
-    public void onTabView(View view) {
-        startActivity(new Intent(MainActivity.this, TabViewActivity.class));
+    public void onViewPager(View view) {
+        startActivity(new Intent(MainActivity.this, ViewPagerActivity.class));
     }
 
     public void onCustomAlert(View view) {

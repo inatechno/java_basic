@@ -1,12 +1,13 @@
 package com.inatechno.javabasicapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.inatechno.javabasicapp.databinding.ActivityWebviewurlhtmlBinding;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,22 +15,25 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class WebviewURLHTMLActivity extends AppCompatActivity {
-WebView webhtml,weburl;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_webview);
-        weburl = findViewById(R.id.weburl);
-        webhtml = findViewById(R.id.webhtml);
+        ActivityWebviewurlhtmlBinding binding = ActivityWebviewurlhtmlBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
         Intent i  = getIntent();
         if (i.getIntExtra("kode",0)==1){
-            weburl.getSettings().setJavaScriptEnabled(true);
-            weburl.loadUrl("https://www.inatechno.com");
+            binding.weburl.getSettings().setJavaScriptEnabled(true);
+            binding.weburl.loadUrl("https://www.inatechno.com");
 
         }else{
-            webhtml.setVisibility(View.VISIBLE);
-            weburl.setVisibility(View.GONE);
+            binding.webhtml.setVisibility(View.VISIBLE);
+            binding.weburl.setVisibility(View.GONE);
             String content = getResource(getResources(),R.raw.materiandroid);
+            String mimetype = "text/html";
+            String encoding = "UTF-8";
+            binding.webhtml.loadDataWithBaseURL("file:///android_asset",content,mimetype,encoding,null);
         }
     }
 
