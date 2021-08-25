@@ -3,6 +3,7 @@ package com.inatechno.javabasicapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
 public class CustomAlertActivity extends AppCompatActivity {
 
@@ -10,5 +11,8 @@ public class CustomAlertActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom_alert);
+    }
+
+    public void onShowAlert(View view) {
     }
 }

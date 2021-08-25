@@ -16,6 +16,7 @@
     <string name="custom_listview">custom listview</string>
     <string name="gridview_biasa">Gridview Biasa</string>
     <string name="custom_grid">custom GRid</string>
+    <string name="show_alert_dialog">Show Alert Dialog</string>
     <array name="namaBuah">
         <item>alpukat</item>
         <item>apel</item>
