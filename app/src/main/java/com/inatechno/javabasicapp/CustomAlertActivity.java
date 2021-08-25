@@ -53,6 +53,12 @@ public class CustomAlertActivity extends AppCompatActivity {
 
             }
         });
+        dialog.setNeutralButton("clear", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
         AlertDialog alert = dialog.create();
         alert.show();
         alert.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener(new View.OnClickListener() {
@@ -71,6 +77,7 @@ public class CustomAlertActivity extends AppCompatActivity {
                     jenkel = "perempuan";
                 }
                 String hobby;
+
                 if (cbgowes.isChecked()){
                     hobby ="gowes";
                 }else if (cbmakan.isChecked()){

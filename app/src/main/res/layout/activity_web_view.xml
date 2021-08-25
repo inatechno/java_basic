@@ -3,20 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".WebviewURLHTMLActivity">
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".WebViewActivity">
 
-
-    <WebView
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:text="webview url"
+        android:onClick="onWEbUrl"/>
 
-        android:id="@+id/weburl"/>
-
-    <WebView
-        android:visibility="gone"
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/webhtml"/>
+        android:layout_height="wrap_content"
+        android:text="webview html"
+        android:onClick="onWEbhtml"/>
 </LinearLayout>

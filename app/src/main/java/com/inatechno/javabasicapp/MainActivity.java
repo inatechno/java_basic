@@ -11,7 +11,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -49,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch (id) {
             case R.id.mn_webview:
-                startActivity(new Intent(MainActivity.this, WebviewActivity.class));
+                startActivity(new Intent(MainActivity.this, WebviewURLHTMLActivity.class));
                 break;
             case R.id.mn_keluarapp:
                 keluar();
@@ -124,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onWebview(View view) {
-        startActivity(new Intent(MainActivity.this, WebviewActivity.class));
+        startActivity(new Intent(MainActivity.this, WebviewURLHTMLActivity.class));
 
     }
 

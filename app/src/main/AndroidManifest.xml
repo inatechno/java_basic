@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JavaBasicApp">
-        <activity android:name=".TangkapDataAlertActivity"></activity>
+        <activity android:name=".WebViewActivity"></activity>
+        <activity android:name=".TangkapDataAlertActivity" />
         <activity android:name=".DetailCustomGridActivity" />
         <activity android:name=".CustomGridViewActivity" />
         <activity android:name=".GridViewBiasaActivity" />
@@ -25,7 +26,7 @@
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".GridViewActivity" />
         <activity android:name=".ListviewActivity" />
-        <activity android:name=".WebviewActivity" />
+        <activity android:name=".WebviewURLHTMLActivity" />
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
