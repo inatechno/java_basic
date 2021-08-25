@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JavaBasicApp">
-        <activity android:name=".DetailCustomGridActivity"></activity>
+        <activity android:name=".TangkapDataAlertActivity"></activity>
+        <activity android:name=".DetailCustomGridActivity" />
         <activity android:name=".CustomGridViewActivity" />
         <activity android:name=".GridViewBiasaActivity" />
         <activity android:name=".DetailCustomListViewActivity" />

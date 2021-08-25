@@ -17,6 +17,19 @@
     <string name="gridview_biasa">Gridview Biasa</string>
     <string name="custom_grid">custom GRid</string>
     <string name="show_alert_dialog">Show Alert Dialog</string>
+    <string name="nama_anda">nama anda</string>
+    <string name="email">email</string>
+    <string name="emailanda">email anda</string>
+    <string name="usia_anda">usia anda</string>
+    <string name="no_hp_anda">no hp anda</string>
+    <string name="jenis_kelamin">jenis kelamin</string>
+    <string name="laki_laki">laki - laki</string>
+    <string name="perempuan">perempuan</string>
+    <string name="hobby">hobby</string>
+    <string name="ngoding">ngoding</string>
+    <string name="makan">makan</string>
+    <string name="nonton_film">nonton film</string>
+    <string name="gowes">gowes</string>
     <array name="namaBuah">
         <item>alpukat</item>
         <item>apel</item>
